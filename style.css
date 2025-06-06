@@ -1,0 +1,188 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h2, h3 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .remove-product {
+      background-color: #e74c3c;
+    }
+
+    .remove-product:hover {
+      background-color: #c0392b;
+    }
+
+    .product-entry {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #007bff;
+      border-radius: 6px;
+    }
+
+    #status {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 1rem;
+      }
+
+      button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    
+#main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Login Page Container */
+#login-page {
+  max-width: 350px;
+  margin: 80px auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+#login-page h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Input Fields */
+#login-page input[type="text"],
+#login-page input[type="password"] {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+#login-page input:focus {
+  border-color: #007bff;
+}
+
+/* Password Wrapper */
+/* Password Wrapper */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Input inside password-wrapper */
+.password-wrapper input {
+  padding-right: 2.5rem; /* space for the icon */
+}
+
+/* Icon Button inside Password Wrapper */
+.password-wrapper .icon-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-80%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.password-wrapper .icon-button svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Login Button */
+#login-page button#login-btn {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#login-page button#login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+#login-error {
+  color: #e63946;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
